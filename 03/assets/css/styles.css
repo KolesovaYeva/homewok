@@ -1,0 +1,221 @@
+/*Normalize*/
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+.heading {
+    text-align: center;
+    font-size: 34px;
+    padding: 100px 20px 50px 20px;
+    margin:0 auto;
+    color: #070707;
+    width:200px;
+    height:40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:700px;
+    font-size:34px;
+    line-height: 46.3px;
+}
+
+.text{
+    text-align: center;
+    font-size: 18px;
+    padding: 15px 0;
+    margin:0 auto;
+    color: #070707;
+    width:100%;
+    max-width:480px;
+    height: 210;
+    line-height: 25px;
+}
+
+
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+
+/*Core styles*/
+
+
+body{
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.35 px;
+    letter-spacing: normal;
+    color: #070707;
+}
+
+.site-title {
+    font-weight: 700;
+}
+
+.container {
+    width:100%;
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+
+
+/*Header*/
+
+.nav_list {
+    font-size:0;
+    text-align: center;
+    border-bottom: 1px solid #828282;
+}
+
+.nav_item {
+    display: inline-block;
+}
+
+.nav_item_link {
+    font-size: 18px;
+    padding: 25px 20px;
+    display: inline-block;
+    color:#828282;
+}
+.nav_item_link.active {
+    color: black;
+}
+.nav_item_link:hover {
+    color:black;
+}
+
+
+
+/*First Screen*/
+
+.title {
+    height: 60px;
+width: 300px;
+font-family: "Open Sans", sans-serif;
+font-weight: 700;
+font-size: 48px;
+line-height: 65.37px;
+color: #070707;
+font-style:normal;
+}
+
+.first_screeen_photo {
+    width:970px;
+    height: 387px;
+    background: url(valentin-salja-1058467-unsplash.jpg);
+}
+
+/*About me*/
+
+.about_me{
+    height: 500px;
+    width:100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #F6F6F6;
+
+}
+
+.about_me_text {
+    text-align: center;
+    font-size: 18px;
+    padding: 15px 0;
+    margin:0 auto;
+    color: #070707;
+    width:100%;
+    max-width:480px;
+    height: 210;
+    line-height: 25px;
+}
+
+
+
+/*Skills*/
+
+.skills {
+    height: 564px;
+    width:100%;
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 0px, 22px, 0px, 22px;
+}
+
+.skills_heading {
+    text-align: center;
+    font-size: 18px;
+    padding: 15px 0;
+    margin:0 auto;
+    color: #070707;
+    width:100%;
+    max-width:480px;
+    height: 210;
+    line-height: 25px;
+}
+
+/*Portfolio*/
+.portfolio_images{
+    width:970px;
+    height: 540px;
+    margin: 0 auto;
+}
+
+.portfolio_text{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    padding: 40px 0;
+    margin-top:580px;
+    margin-left:385px;
+    margin-bottom:580px;
+    color: #070707;
+    width:100%;
+    max-width:200px;
+    height: 50px;
+    line-height: 134px;
+}
+
+/*Contacts*/
+button {
+    height: 44px;
+width: 180px;
+margin:0 auto;
+border-radius: 22px;
+padding: 0px, 16px, 0px, 16px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+color:#FFFFFF;
+background-color:  #070707;;
+}
+
+.social_group {
+    font-size:0;
+    text-align: center;
+}
+
+.social_group_icon {
+    display: inline-block;
+}
+
+.social_group_image {
+    font-size: 18px;
+    padding: 25px 20px;
+    display: inline-block;
+    color:#828282;
+}
