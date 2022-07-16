@@ -38,30 +38,44 @@ a{
     line-height: 25px;
 }
 
-
-
 ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
+div {
+    display: block;
+}
+
+p, h2{
+    padding:0;
+    margin:0;
+}
+
+section{
+    display:block;
+}
 
 
 /*Core styles*/
 
 
 body{
-    background-color: white;
-    font-family: 'Lato', sans-serif;
+    background-color: #fff;
+    font-family: 'Open-Sans', sans-serif;
     font-size: 18px;
     line-height: 1.35 px;
     letter-spacing: normal;
     color: #070707;
+    box-sizing: border-box;
 }
 
 .site-title {
-    font-weight: 700;
+    font-size: 34px;
+    line-height:1.35;
+    font-weight:700;
+    text-align:center;
 }
 
 .container {
@@ -73,6 +87,7 @@ body{
 
 
 /*Header*/
+
 
 .nav_list {
     font-size:0;
@@ -118,7 +133,9 @@ font-style:normal;
     background: url(valentin-salja-1058467-unsplash.jpg);
 }
 
+
 /*About me*/
+
 
 .about_me{
     height: 500px;
@@ -165,7 +182,82 @@ font-style:normal;
     line-height: 25px;
 }
 
+.skills, .site_title {
+    margin-bottom:20px;
+}
+
+.skill_description{
+    text-align: center;
+    font-size: 18px;
+    line-height:1.35;
+    margin-bottom: 50px;
+}
+
+.skill_product {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.skill_item{
+    width:100%;
+    max-width:170px;
+}
+
+.skill_image {
+    width:80px;
+    margin:0 auto 25px;
+
+}
+
+.skill_item:last-child .skill_image {
+    height:100px;
+}
+
+.skill_name {
+    color: #828282;
+    font-weight: 700;
+    max-width: 80px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 auto 60px;
+}
+
+.skill_rating{
+    font-size:0;
+}
+
+.star_icon {
+    display:inline-block;
+    width:26px;
+    height:26px;
+    background-image: url('../img/13.png');
+    background-repeat:no-repeat;
+    background-size:100% auto;
+}
+
+.star_icon:not(:last-child) {
+    margin-right:10px;
+}
+
+.star_icon.grey{
+    background-image: url('../img/14.png')
+}
+
+
+
 /*Portfolio*/
+
+
+.portfolio {
+    height: 2268px;
+    width:100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #F6F6F6;
+}
+
 .portfolio_images{
     width:970px;
     height: 540px;
@@ -189,11 +281,15 @@ font-style:normal;
     line-height: 134px;
 }
 
+
+
 /*Contacts*/
+
+
 button {
     height: 44px;
 width: 180px;
-margin:0 auto;
+margin:70px auto 40px;
 border-radius: 22px;
 padding: 0px, 16px, 0px, 16px;
 display: flex;
@@ -207,6 +303,7 @@ background-color:  #070707;;
 .social_group {
     font-size:0;
     text-align: center;
+    margin:40px auto 60px;
 }
 
 .social_group_icon {
@@ -218,4 +315,26 @@ background-color:  #070707;;
     padding: 25px 20px;
     display: inline-block;
     color:#828282;
+}
+
+
+/*Footer*/
+
+
+.footer{
+    margin:60px auto 100px;
+}
+
+.footer_text{
+    width: 200px;
+    height:60px;
+    margin: 0 auto 60px;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:#828282;
+    flex: none;
 }
