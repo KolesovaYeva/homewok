@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <section class="Block_2">
+    <header class="heading">
+        <h1>Profile</h1>
+    </header>
+    <main>
+        <form class="form">   
+            <div class="avatar">
+                <div class="avatar_image">
+                    <img src="./assets/img/1.svg" alt="#">
+                </div> 
+                <div class="avatar_details">
+                    <input type="text" name="unknown_input" id="unknown_input" class="unknown_input"  required autofocus>
+                    <p class="text_details">Up to 1 MB (300x300 px)</p> 
+                </div>  
+                <button type="reset" class="button_trash" >
+                    <img src="./assets/img/2.svg" alt="trash_icon">
+                </button>
+            </div>       
+            <div class="name_email">
+                <div class="name_field">
+                    <div class="name_block">
+                        <label for="name" class="label">Name</label>
+                        <input type="text" name="name" id="Name" class="input-field"  required autofocus>
+                    </div>
+                </div>
+                   <div class="Email_block">
+                    <label for="email" class="label">E-mail</label>
+                    <input type="email" name="name" id="email" class="input-field"  required autofocus>
+                   </div>    
+            </div>         
+            <div class="region">
+                <div class="country">
+                    <label for="select" class="label">Country</label>
+                    <select name="country" class="input-field" id="select_country" multiple="multiple"  required autofocus>
+                        <option value="">Choose your country</option>
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="German">German</option>
+                        <option value="Estonia">Estonia</option>
+                        <option value="Poland">Poland</option>
+                        <option value="Lithuania">Lithuania</option>
+                        <option value="UK">UK</option>
+                        <option value="Latvia">Latvia</option>
+                        <option value="etc_country">etc</option>
+                    </select>
+                </div>
+                <div class="city">
+                    <label for="select" class="label">City</label>
+                    <select name="city" class="input-field" id="select_city" multiple="multiple" required autofocus>
+                        <option value="">Choose your city</option>
+                        <option value="Kyiv">Kyiv</option>
+                        <option value="Berlin">Berlin</option>
+                        <option value="Tallin">Tallin</option>
+                        <option value="Warsaw">Warsaw</option>
+                        <option value="Vilnius">Vilnius</option>
+                        <option value="London">London</option>
+                        <option value="Riga">Riga</option>
+                        <option value="etc_city">etc</option>
+                    </select>
+                </div>
+               </div>       
+            <div class="zip-code_phone-number">
+                <div class="zip_field">
+                    <div class="zip_block">
+                        <label for="zip" class="label">Zip Code</label>
+                        <input type="text" name="zip"  class="input-field"  required autofocus>
+                    </div>
+                </div>
+                   <div class="phone_number_block">
+                         <label for="phone_number" class="label">Phone Number</label>
+                         <input type="text" name="phone_number"  class="input-field"  required autofocus>
+                   </div>    
+               </div>
+             <button type="submit" class="button" >Update</button>
+        </form>
+    </main>
+    </section>
+</body>
+</html>

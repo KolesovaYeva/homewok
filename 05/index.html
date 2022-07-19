@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <section class="Block_1">
+        <header class="heading">
+        <h1>Create a Account</h1>
+        </header>
+        <main>
+        <form class="form">
+           <div class="name_field">
+                 <div class="first_name_block">
+                     <label for="first_name" class="label">First Name</label>
+                     <input type="text" name="name" id="first_name" class="input-field"  required autofocus>
+                 </div>
+                 <div class="last_name_block">
+                     <label for="last_name" class="label">Last Name</label>
+                     <input type="text" name="name" id="last_name" class="input-field" required autofocus>
+                 </div>
+           </div>
+           <div class="Email_block">
+                 <label for="email" class="label">E-mail</label>
+                 <input type="email" name="name" id="email" class="input-field"  required autofocus>
+                 <p class="text_details">We'll never share your email with anyone else.</p>
+           </div>
+           <div class="male_female">
+                <label class="radioContainer">
+                    <input  type="radio" name="male_female"> 
+                    <span class="circle"></span> Male
+                </label>
+                <label class="radioContainer">
+                    <input type="radio" name="male_female" > 
+                    <span class="circle"></span>Female
+                </label>
+           </div>
+           <div class="region">
+            <div class="country">
+                <label for="select" class="label">Country</label>
+                <select name="country" class="input-field" id="select_country" placeholder="Select"  required autofocus>
+                    <option value="">Choose your country</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="German">German</option>
+                    <option value="Estonia">Estonia</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Lithuania">Lithuania</option>
+                    <option value="UK">UK</option>
+                    <option value="Latvia">Latvia</option>
+                    <option value="etc_country">etc</option>
+                </select>
+            </div>
+            <div class="city">
+                <label for="select" class="label">City</label>
+                <select name="city" class="input-field" id="select_city" placeholder="Select" required autofocus>
+                    <option value="">Choose your city</option>
+                    <option value="Kyiv">Kyiv</option>
+                    <option value="Berlin">Berlin</option>
+                    <option value="Tallin">Tallin</option>
+                    <option value="Warsaw">Warsaw</option>
+                    <option value="Vilnius">Vilnius</option>
+                    <option value="London">London</option>
+                    <option value="Riga">Riga</option>
+                    <option value="etc_city">etc</option>
+                </select>
+            </div>
+           </div>
+           <button type="submit" class="button" >Sign up</button>
+        </form>
+        <section class="terms">
+            <p class="terms_text">By clickng he "Sign Up" button, you confirm that you accept our <br> 
+                <a href="....">Terms of Use</a> and <a href="...">Privacy Policy</a></p>
+        </section>
+        </main>
+        <footer class="footer">
+        <p class="footer_text">Have an account?</p>
+        <p class="footer_text"><a href="...">Log in</a></p>
+        </footer>
+    </section>
+</body>
+</html>
