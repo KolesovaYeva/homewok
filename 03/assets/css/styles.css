@@ -21,7 +21,7 @@ a{
     width:200px;
     height:40px;
     font-family: 'Open Sans', sans-serif;
-    font-weight:700px;
+    font-weight:700;
     font-size:34px;
     line-height: 46.3px;
 }
@@ -117,8 +117,7 @@ body{
 /*First Screen*/
 
 .title {
-    height: 60px;
-width: 300px;
+
 font-family: "Open Sans", sans-serif;
 font-weight: 700;
 font-size: 48px;
@@ -311,6 +310,8 @@ background-color:  #070707;;
 }
 
 .social_group_image {
+    width:40px;
+    height:40px;
     font-size: 18px;
     padding: 25px 20px;
     display: inline-block;
