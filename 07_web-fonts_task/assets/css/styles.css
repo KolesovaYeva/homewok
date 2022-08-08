@@ -71,7 +71,7 @@ main{
 .background{
     width:500px;
     position:sticky;
-    left:36.5%;
+    left:55.5%;
     top:100px;
 }
 
@@ -103,11 +103,9 @@ body{
 
 
 section.documentation{
-    position:absolute;
-    width:1440px;
-    height:3081px;
-    top: 100px;
-    left:100px;
+    width: 100%;
+    max-width: 1440px;
+    height: 3081px;
 }
 
 
@@ -120,7 +118,7 @@ header{
     position:sticky;
     overflow:visible;
     height: 80px;
-    width: 1440px;
+    width: 100%;
     left: 0px;
     top: 0px;
     border-radius: 0px;
@@ -238,7 +236,11 @@ h2.headings{
 
 /*SECTION WHO`S USING*/
 
-
+.who-s_using{
+    width:100%;
+    max-width:1440px;
+    height:740px;
+}
 
 h2.heading_2{
     font-family: 'Roboto', sans-serif;
