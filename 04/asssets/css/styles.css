@@ -170,7 +170,7 @@ li:nth-child(2n){
     background-color: #7A7593;
 }
 
-.checkbox-input:checked + .points{
+.checkbox-input:checked ~ .details{
     text-decoration: line-through;
 }
 

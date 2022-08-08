@@ -1,0 +1,310 @@
+/*Normalize*/
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.headings {
+    width:100%;
+    height:48px;
+    text-align: left;
+    font-size: 36px;
+    padding: 2px;
+    margin:0 auto;
+    color: #000000;
+    font-family: 'Francois One', sans-serif;
+    font-weight:400;
+    line-height: 48px;
+    text-transform: uppercase;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.text{
+    text-align: left;
+    font-family:'PT Sans';
+    font-style:normal;
+    font-size: 28px;
+    padding: 0;
+    margin:40px auto 70px;
+    color: #070707;
+    line-height: 48px;
+    flex:none;
+}
+
+ul {
+    padding: 0;
+    margin: auto 25px;
+    list-style: none;
+}
+
+div {
+    display: block;
+}
+
+section{
+    display:block;
+width: 70%;
+height:100%;
+margin:50px auto;
+padding: 35px 34px 16px 36px ;
+border-radius: 6px;
+background: #FFFFFF;
+background-repeat: no-repeat;
+background-position-x: right;
+background-position-y: 150px;
+border-radius: 6px;
+}
+
+main{
+    position:relative;
+    margin: 70px auto 90px;
+    z-index:1;
+}
+
+.background{
+    width:500px;
+    position:sticky;
+    left:36.5%;
+    top:100px;
+}
+
+/*Core styles*/
+
+
+body{ 
+    background-color:azure;
+    color: #070707;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    gap:20px;
+    align-items: center;
+    position: relative;
+}
+
+
+.container {
+    width:100%;
+    margin: 0 auto;
+}
+
+
+
+
+/*SECTION DOCUMENTATION*/
+
+
+section.documentation{
+    position:absolute;
+    width:1440px;
+    height:3081px;
+    top: 100px;
+    left:100px;
+}
+
+
+
+/*Header*/
+
+header{
+    display:flex;
+    flex-wrap: wrap;
+    position:sticky;
+    overflow:visible;
+    height: 80px;
+    width: 1440px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    background-color: #FFFFFF;
+    z-index:2;
+
+}
+
+.lang{
+    width:50px;
+    height:20.38px;
+    top:31px;
+    left:120px;
+    margin:0;
+    font-family: 'Tourney', 'cursive';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+    text-align: left;
+    letter-spacing: 0.04em;
+    position:absolute;
+}
+.lang_text{
+    margin:0;
+}
+
+.nav_list {
+    width: 278px;
+    height:20px;
+    top: 30px;
+    left:220px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 0px;
+    font-size:0;
+}
+
+.nav_item {
+    display: inline-block;
+}
+
+a.nav_item_link {
+    font-family:'Staatliches', 'cursive';
+    font-size: 22px;
+    font-weight:400;
+    line-height:27.5px;
+    padding: 25px 10px;
+    display: inline-block;
+    color:#000000;
+}
+.img_logo {
+position:absolute;
+right: 120px;
+top: 13px;
+}
+
+
+/*Aside*/
+
+
+.side_bar{
+    height: 462px;
+width: 385px;
+border-radius: 0px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+position:sticky;
+overflow:visible;
+top:80px;
+left:0px;
+}
+p.headings{
+    border-bottom: 1px solid #EAEAEA;
+    margin: 10px 0 80px;
+}
+
+/*Main part*/
+
+.main_text{
+   width:786px;
+   height: 2931px;
+   position:absolute;
+   top:0px;
+   left:415px;
+}
+
+h2.headings{
+    padding-top:15px;
+    margin:0px 0px 40px;
+    width:367px;
+    height:48px;
+    text-align: left;
+}
+
+.chapter_exception.text{
+    margin-bottom:40px;
+}
+
+.grey_background{
+    background-color: #DADADA;
+}
+
+
+
+
+
+
+
+
+
+/*SECTION WHO`S USING*/
+
+
+
+h2.heading_2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size:36px;
+    line-height: 48px;
+    padding-left:20px;
+}
+
+.wu_heading{
+    display:flex;
+    flex-wrap: wrap;
+    position:absolute;
+    left:40px;
+}
+
+/*card block*/
+
+.card_block{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    gap:20px;
+    align-items: center;
+    position:absolute;
+    top:140px;
+    left:40px;
+    padding:20px 0;
+    border-top: 1px solid #DADADA;
+    border-bottom: 1px solid #DADADA;
+}
+  
+  .flip-card {
+    width: 270px;
+    height: 180px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateX(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    color: black;
+  }
+  
+  .flip-card-back {
+    color: white;
+    transform: rotateX(180deg);
+  }
