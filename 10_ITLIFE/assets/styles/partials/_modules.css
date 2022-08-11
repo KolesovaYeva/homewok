@@ -1,0 +1,355 @@
+body {
+  background-color: #F6F6F6;
+}
+
+.header {
+  width: 100%;
+  padding: 19px 0;
+  background-color: #ffff;
+  position: fixed;
+  z-index: 11;
+}
+
+.button-block {
+  z-index: 13;
+}
+
+.button {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #3C3C3C;
+  background-color: #FFF;
+  padding: 10px 20px;
+  border: 1px solid #3C3C3C;
+  cursor: pointer;
+}
+
+.hamburger {
+  z-index: 1;
+}
+
+.nav-list .nav-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #3C3C3C;
+  padding-right: 30px;
+}
+
+.main {
+  padding-top: 150px;
+}
+
+.section-top {
+  width: 52%;
+  position: relative;
+  margin: 0 auto 60px;
+}
+.section-top .title-block {
+  margin-bottom: 64px;
+}
+.section-top .title-block .title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  text-align: center;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: #3C3C3C;
+  margin-bottom: 20px;
+}
+.section-top .title-block .title::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 45px;
+  border: solid #DDDBDB;
+  border-width: 0 1px 4px 0;
+  left: 45%;
+  top: 41%;
+}
+.section-top .subtitle {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #3C3C3C;
+}
+
+.section-team {
+  margin-bottom: 150px;
+}
+.section-team .employee-name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #282528;
+}
+.section-team .employee-job-title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #646464;
+}
+.section-team .section-team-item {
+  margin: 0 auto;
+}
+
+.card-block {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  z-index: 10;
+}
+.card-block_background {
+  background: #2D3DCC;
+  width: 500px;
+  height: 270px;
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: -200%;
+  z-index: 1;
+  transition: all 0.5s ease-in;
+}
+.card-block_left {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 73%;
+  left: 0%;
+  opacity: 0.9;
+  transform: scale(0);
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+.card-block_left:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #2E8FE7;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: all 0.3s ease;
+  transition-delay: 0.2s;
+}
+.card-block_left .text {
+  font-size: 10px;
+  color: #fff;
+  line-height: 6rem;
+  padding: 0 15px;
+  bottom: 25%;
+  z-index: 3;
+  left: 15%;
+  position: absolute;
+}
+.card-block_right {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: -15%;
+  left: 45%;
+  opacity: 0.9;
+  transform: scale(0);
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+.card-block_right:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #2E8FE7;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: all 0.3s ease;
+  transition-delay: 0.2s;
+}
+.card-block_socials {
+  list-style: none;
+  position: absolute;
+  top: 20%;
+  right: 37%;
+  padding-top: 60px;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: row;
+}
+
+.socials-item {
+  display: inline-block;
+  margin: 4px;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: rgba(87, 204, 253, 0.9);
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 17px;
+  transition: all 0.3s ease;
+  transform: translateX(500%);
+}
+.socials-item:nth-child(1) {
+  transition-delay: 0.2s;
+}
+.socials-item:nth-child(2) {
+  transition-delay: 0.3s;
+}
+.socials-item:nth-child(3) {
+  transition-delay: 0.4s;
+}
+
+.footer {
+  width: 100%;
+  background-color: #ffff;
+  text-align: center;
+  padding: 40px 0;
+}
+.footer .footer-logo {
+  margin-bottom: 19px;
+}
+.footer .footer-nav-list {
+  margin-bottom: 28px;
+}
+.footer .footer-nav-list .footer-nav-item {
+  font-size: 18px;
+}
+.footer .icon-block .icon {
+  font-size: 20px;
+  color: #18B5DC;
+  border: 1px solid #18B5DC;
+  padding: 13px 12px;
+}
+
+@media screen and (min-width: 1367px) {
+  .hamburger-box {
+    left: 1000px;
+  }
+
+  .section-top .title-block .title::after {
+    left: 45%;
+    top: 41%;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .section-team-item {
+    padding: 0px 40px;
+  }
+
+  .side-block {
+    position: fixed;
+    background-color: #fff;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 75%;
+    max-width: 440px;
+    flex-direction: column;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+    transform: translateX(100%);
+  }
+  .side-block.open {
+    transform: translateX(10%);
+  }
+  .side-block .nav-item {
+    font-size: 24px;
+    font-weight: bold;
+    font-weight: 700;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .side-block .nav-item:hover {
+    background-color: #fff;
+  }
+  .side-block .nav-item:hover a {
+    color: #fff;
+  }
+}
+@media screen and (max-width: 425px) {
+  .card-block_background {
+    left: -225%;
+  }
+
+  .card-block_left {
+    width: 105px;
+    height: 105px;
+  }
+
+  .card-block .text {
+    font-size: 8px;
+    line-height: 4rem;
+    bottom: 32%;
+  }
+
+  .card-block_right {
+    width: 205px;
+    height: 205px;
+  }
+
+  .card-block_socials {
+    top: -8%;
+    right: 53%;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 320px) {
+  .card-block_background {
+    left: -280%;
+  }
+
+  .card-block_left {
+    width: 94px;
+    height: 94px;
+  }
+
+  .card-block .text {
+    font-size: 7px;
+    line-height: 3.1rem;
+    bottom: 39%;
+  }
+  .card-block .socials-item {
+    width: 27px;
+    height: 27px;
+    line-height: 2.1rem;
+    font-size: 11px;
+  }
+
+  .card-block_right {
+    width: 150px;
+    height: 150px;
+  }
+
+  .card-block_socials {
+    top: -23%;
+    right: 47%;
+    flex-direction: column;
+  }
+
+  .footer .icon-block .icon {
+    font-size: 14px;
+    padding: 8px 8px;
+  }
+}
