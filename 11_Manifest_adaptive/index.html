@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/index.min.css">
+    <title>Manifest Adative</title>
+</head>
+<body>
+    <header class="header-block">
+        <div class="container flex-row">
+                <a class="logo-link" href="...">CASE STUDY</a>
+            <div class="side-block side-block-container" id="side_menu">
+                <nav class="nav-list flex-row">
+                    <ul class="nav-list flex-row " >
+                        <li class="nav-item"><a href="#Project_Overview">Project Overview</a></li>
+                        <li class="nav-item"><a href="#User_Research_and_Personas">User Research and Personas</a></li>
+                        <li class="nav-item"><a href="#Initial_Sketches">Initial Sketches</a></li>
+                        <li class="nav-item"><a href="#Final_Design">Final Design</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="button-block">
+                <button class="hamburger hamburger--emphatic" type="button" id="hamburger">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>
+            </div>
+        </div>
+    </header>
+    <main class="main-block">
+       <section class="first-screen-block">
+        <div class="container">
+            <h1 class="main-title">AI Fashion Platform</h1>
+            <picture class="section-image">
+                <source media="(min-width: 769px)" srcset="./assets/img/first-screen-image-deksptop.webp">
+                <source media="(min-width: 321px)" srcset="./assets/img/fist-screen-image-tablet.webp">
+                <img src="./assets/img/first-screen-image-mobile.webp" alt="">
+              </picture>
+           </div>
+       </section>
+       <section class="description-block">
+            
+       </section>
+       <section class="first-section-block">
+            
+
+       </section>
+       <section class="second-section-block">
+
+       </section>
+       <section class="third-section-block">
+        
+       </section>
+    </main>
+    <footer class="footer-block">
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function() {
+        $('#hamburger').click(function() {
+          $('#side_menu').toggleClass('open');
+          $('#hamburger').toggleClass('is-active');
+        })
+      });
+    </script>
+</body>
+</html>
