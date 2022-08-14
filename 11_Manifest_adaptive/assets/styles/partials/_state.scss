@@ -1,1 +1,11 @@
 // Some :hover :active etc
+
+.icon-block{
+    .icon{
+        &:hover{
+            color:#FFFFFF;
+            background: #565656;
+            transition: all .4s ease;
+        }
+    }
+}

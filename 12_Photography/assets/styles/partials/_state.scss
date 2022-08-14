@@ -1,0 +1,9 @@
+.grid_block{
+    .grid_item{
+        &:hover{
+            background: none;
+            transition: all 1s ease;
+            margin:-10px 0;
+        }
+    }
+}

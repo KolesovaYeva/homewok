@@ -40,3 +40,61 @@
     color: grey;
   }
 }
+@media screen and (max-width: 768px) {
+  .section-block .main-title {
+    font-size: 33px;
+    line-height: 50px;
+  }
+  .section-block .description {
+    width: 100%;
+  }
+
+  .footer-block {
+    padding-bottom: 6.6%;
+  }
+  .footer-block .flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+    gap: 40px;
+  }
+  .footer-block .flex-column .phone-number {
+    text-align: center;
+  }
+  .footer-block .flex-column .email {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 94%;
+  }
+
+  .main-block {
+    padding-top: 19.05%;
+  }
+
+  .section-block {
+    margin: 0 auto 70px;
+  }
+  .section-block .main-title {
+    font-size: 28px;
+  }
+  .section-block .section-title {
+    font-size: 26px;
+    margin-bottom: 13.5%;
+  }
+  .section-block .section-text {
+    font-size: 16px;
+    margin: 6.7% 0 3%;
+  }
+
+  .CTA-heading {
+    text-align: center;
+  }
+
+  .footer-block .copyright {
+    font-size: 16px;
+  }
+}

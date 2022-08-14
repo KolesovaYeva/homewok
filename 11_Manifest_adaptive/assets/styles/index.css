@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .hamburger {
   padding: 15px 15px;
   display: inline-block;
@@ -102,7 +103,12 @@
 @font-face {
   font-family: "Red Hat Display", sans-serif;
   font-weight: normal;
-  src: url("/10_ITLIFE/assets/fonts");
+  src: url("/11_Manifest_adaptive/assets/fonts");
+}
+@font-face {
+  font-family: "Covered By Your Grace", cursive;
+  font-weight: normal;
+  src: url("/11_Manifest_adaptive/assets/fonts");
 }
 html, body {
   width: 100%;
@@ -136,8 +142,51 @@ img {
 @font-face {
   font-family: "Red Hat Display", sans-serif;
   font-weight: normal;
-  src: url("/10_ITLIFE/assets/fonts");
+  src: url("/11_Manifest_adaptive/assets/fonts");
 }
+@font-face {
+  font-family: "Covered By Your Grace", cursive;
+  font-weight: normal;
+  src: url("/11_Manifest_adaptive/assets/fonts");
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/iconmoon/icomoon.eot");
+  src: url("../fonts/iconmoon/icomoon.eot") format("embedded-opentype"), url("../fonts/iconmoon/icomoon.ttf") format("truetype"), url("../fonts/iconmoon/icomoon.woff") format("woff"), url("../fonts/iconmoon/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "";
+}
+
+.icon-instagram:before {
+  content: "";
+}
+
+.icon-twitter:before {
+  content: "";
+}
+
+.icon-linkedin2:before {
+  content: "";
+}
+
 .container {
   width: 81%;
   max-width: 1170px;
@@ -158,12 +207,12 @@ img {
 }
 
 body {
-  background-color: #F6F6F6;
+  background: #ffff;
 }
 
 .header-block {
   width: 100%;
-  padding: 20px 0;
+  padding: 1.4% 0;
   background-color: #ffff;
   position: fixed;
   z-index: 11;
@@ -180,9 +229,111 @@ body {
   letter-spacing: 0.5em;
   color: #000000;
 }
+.header-block .nav-list .nav-item {
+  font-family: "Covered By Your Grace", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #3C3C3C;
+  padding-right: 2.2em;
+  transform: skewX(-15deg);
+}
+
+.section-block {
+  text-align: left;
+  margin: 0 auto 90px;
+}
+.section-block .main-title {
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: 6.05%;
+}
+.section-block .section-title {
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+  margin-bottom: 4.5%;
+}
+.section-block .section-text {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #565656;
+  margin: 1% 0 3%;
+}
+.section-block .description {
+  width: 50%;
+}
 
 .main-block {
-  padding-top: 130px;
+  position: relative;
+  padding-top: 9.05%;
+}
+
+.icon-block .icon {
+  font-size: 20px;
+  color: #565656;
+  border: 1px solid #565656;
+  padding: 13px 12px;
+}
+
+.footer-block {
+  padding: 5% 0 2.1%;
+  background: #F4F4F4;
+}
+.footer-block .CTA-heading {
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: 8.1%;
+}
+.footer-block .contacts-block {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+.footer-block .phone-number {
+  margin-bottom: 4.1%;
+}
+.footer-block .copyright {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 1.75%;
+}
+
+.icon-block .icon:hover {
+  color: #FFFFFF;
+  background: #565656;
+  transition: all 0.4s ease;
 }
 
 @media screen and (min-width: 1367px) {
@@ -225,5 +376,63 @@ body {
   }
   .side-block .nav-item:hover a {
     color: grey;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-block .main-title {
+    font-size: 33px;
+    line-height: 50px;
+  }
+  .section-block .description {
+    width: 100%;
+  }
+
+  .footer-block {
+    padding-bottom: 6.6%;
+  }
+  .footer-block .flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+    gap: 40px;
+  }
+  .footer-block .flex-column .phone-number {
+    text-align: center;
+  }
+  .footer-block .flex-column .email {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 94%;
+  }
+
+  .main-block {
+    padding-top: 19.05%;
+  }
+
+  .section-block {
+    margin: 0 auto 70px;
+  }
+  .section-block .main-title {
+    font-size: 28px;
+  }
+  .section-block .section-title {
+    font-size: 26px;
+    margin-bottom: 13.5%;
+  }
+  .section-block .section-text {
+    font-size: 16px;
+    margin: 6.7% 0 3%;
+  }
+
+  .CTA-heading {
+    text-align: center;
+  }
+
+  .footer-block .copyright {
+    font-size: 16px;
   }
 }
