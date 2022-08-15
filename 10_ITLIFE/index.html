@@ -45,9 +45,11 @@
                         <li class="nav-item"><a href="#">Contact</a></li>
                     </ul>
                 </nav>
+                <div class="element" id="element"></div>
+            </div>
+            <div class="callback-button" id="side_button">
                 <!--тут могла бы быть ваша реклама-->
-                <button class="button" id="side_button"><a href="tel:+(***)*** ** **">Callback</a></button>
-                <!--не имею даже понятия как ее выровнять (в процессе)-->
+                <button class="button"><a href="tel:+(***)*** ** **">Callback</a></button>
             </div>
             <div class="button-block">
                 <button class="hamburger hamburger--emphatic" type="button" id="hamburger">
@@ -201,7 +203,7 @@
       $(document).ready(function() {
         $('#hamburger').click(function() {
           $('#side_menu').toggleClass('open');
-          $('#side_button').toggleClass('transformed-button');
+          $("#side_button").prependTo("#element");
           $('#hamburger').toggleClass('is-active');
         })
       });

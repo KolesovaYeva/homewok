@@ -3,11 +3,23 @@
     .hamburger-box{
         left:1000px;
     }
+    .button-block{
+        display: none;
+    }
+    
 
 }
 @media screen and (max-width:1366px){
     .section-team-item{
         padding: 0px 40px;
+    }
+    .callback-button{
+        display:none;
+    }
+    .element{
+        .callback-button{
+            display:block;
+        }
     }
     .side-block {
         position: fixed;
@@ -48,6 +60,8 @@
 }
 
 
+
+
 @media screen and (max-width:425px){
     .card-block_background{
         left:-225%;
@@ -76,6 +90,7 @@
         left:40%;
         top:40%;
     }
+    
 }
 
 @media screen and (max-width:320px){

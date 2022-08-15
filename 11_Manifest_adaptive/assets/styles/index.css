@@ -95,20 +95,45 @@
   transition: right 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+/* lato-regular - latin */
 @font-face {
-  font-family: "Lato", sans-serif;
-  font-weight: normal;
-  src: url("/11_Manifest_adaptive/assets/fonts");
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato/lato-v23-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/lato/lato-v23-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/lato-v23-latin-regular.woff2") format("woff2"), url("../fonts/lato/lato-v23-latin-regular.woff") format("woff"), url("../fonts/lato/lato-v23-latin-regular.ttf") format("truetype"), url("../fonts/lato/lato-v23-latin-regular.svg#Lato") format("svg");
+  /* Legacy iOS */
 }
+/* red-hat-display-regular - latin */
 @font-face {
-  font-family: "Red Hat Display", sans-serif;
-  font-weight: normal;
-  src: url("/11_Manifest_adaptive/assets/fonts");
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/red-hat-display/red-hat-display-v13-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/red-hat-display/red-hat-display-v13-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/red-hat-display/red-hat-display-v13-latin-regular.woff2") format("woff2"), url("../fonts/red-hat-display/red-hat-display-v13-latin-regular.woff") format("woff"), url("../fonts/red-hat-display/red-hat-display-v13-latin-regular.ttf") format("truetype"), url("../fonts/red-hat-display/red-hat-display-v13-latin-regular.svg#RedHatDisplay") format("svg");
+  /* Legacy iOS */
 }
+/* red-hat-display-600 - latin */
 @font-face {
-  font-family: "Covered By Your Grace", cursive;
-  font-weight: normal;
-  src: url("/11_Manifest_adaptive/assets/fonts");
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/red-hat-display/red-hat-display-v13-latin-600.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/red-hat-display/red-hat-display-v13-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/red-hat-display/red-hat-display-v13-latin-600.woff2") format("woff2"), url("../fonts/red-hat-display/red-hat-display-v13-latin-600.woff") format("woff"), url("../fonts/red-hat-display/red-hat-display-v13-latin-600.ttf") format("truetype"), url("../fonts/red-hat-display/red-hat-display-v13-latin-600.svg#RedHatDisplay") format("svg");
+  /* Legacy iOS */
+}
+/* covered-by-your-grace-regular - latin */
+@font-face {
+  font-family: "Covered By Your Grace";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/covered-by-your-grace/covered-by-your-grace-v15-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/covered-by-your-grace/covered-by-your-grace-v15-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/covered-by-your-grace/covered-by-your-grace-v15-latin-regular.woff2") format("woff2"), url("../fonts/covered-by-your-grace/covered-by-your-grace-v15-latin-regular.woff") format("woff"), url("../fonts/covered-by-your-grace/covered-by-your-grace-v15-latin-regular.ttf") format("truetype"), url("../fonts/covered-by-your-grace/covered-by-your-grace-v15-latin-regular.svg#CoveredByYourGrace") format("svg");
+  /* Legacy iOS */
 }
 html, body {
   width: 100%;
@@ -134,20 +159,45 @@ img {
   background-size: cover;
 }
 
+/* lato-regular - latin */
 @font-face {
-  font-family: "Lato", sans-serif;
-  font-weight: normal;
-  src: url("/11_Manifest_adaptive/assets/fonts");
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato/lato-v23-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/lato/lato-v23-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/lato-v23-latin-regular.woff2") format("woff2"), url("../fonts/lato/lato-v23-latin-regular.woff") format("woff"), url("../fonts/lato/lato-v23-latin-regular.ttf") format("truetype"), url("../fonts/lato/lato-v23-latin-regular.svg#Lato") format("svg");
+  /* Legacy iOS */
 }
+/* red-hat-display-regular - latin */
 @font-face {
-  font-family: "Red Hat Display", sans-serif;
-  font-weight: normal;
-  src: url("/11_Manifest_adaptive/assets/fonts");
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/red-hat-display/red-hat-display-v13-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/red-hat-display/red-hat-display-v13-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/red-hat-display/red-hat-display-v13-latin-regular.woff2") format("woff2"), url("../fonts/red-hat-display/red-hat-display-v13-latin-regular.woff") format("woff"), url("../fonts/red-hat-display/red-hat-display-v13-latin-regular.ttf") format("truetype"), url("../fonts/red-hat-display/red-hat-display-v13-latin-regular.svg#RedHatDisplay") format("svg");
+  /* Legacy iOS */
 }
+/* red-hat-display-600 - latin */
 @font-face {
-  font-family: "Covered By Your Grace", cursive;
-  font-weight: normal;
-  src: url("/11_Manifest_adaptive/assets/fonts");
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/red-hat-display/red-hat-display-v13-latin-600.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/red-hat-display/red-hat-display-v13-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/red-hat-display/red-hat-display-v13-latin-600.woff2") format("woff2"), url("../fonts/red-hat-display/red-hat-display-v13-latin-600.woff") format("woff"), url("../fonts/red-hat-display/red-hat-display-v13-latin-600.ttf") format("truetype"), url("../fonts/red-hat-display/red-hat-display-v13-latin-600.svg#RedHatDisplay") format("svg");
+  /* Legacy iOS */
+}
+/* covered-by-your-grace-regular - latin */
+@font-face {
+  font-family: "Covered By Your Grace";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/covered-by-your-grace/covered-by-your-grace-v15-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/covered-by-your-grace/covered-by-your-grace-v15-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/covered-by-your-grace/covered-by-your-grace-v15-latin-regular.woff2") format("woff2"), url("../fonts/covered-by-your-grace/covered-by-your-grace-v15-latin-regular.woff") format("woff"), url("../fonts/covered-by-your-grace/covered-by-your-grace-v15-latin-regular.ttf") format("truetype"), url("../fonts/covered-by-your-grace/covered-by-your-grace-v15-latin-regular.svg#CoveredByYourGrace") format("svg");
+  /* Legacy iOS */
 }
 @font-face {
   font-family: "icomoon";
@@ -233,12 +283,11 @@ body {
   font-family: "Covered By Your Grace", cursive;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
   color: #3C3C3C;
   padding-right: 2.2em;
-  transform: skewX(-15deg);
 }
 
 .section-block {
@@ -340,6 +389,13 @@ body {
   .hamburger-box {
     left: 1000px;
   }
+
+  .header-block {
+    padding: 2% 0;
+  }
+  .header-block .button-block {
+    display: none;
+  }
 }
 @media screen and (max-width: 1366px) {
   .section-team-item {
@@ -386,6 +442,9 @@ body {
   .section-block .description {
     width: 100%;
   }
+  .section-block .section-title {
+    margin-bottom: 7%;
+  }
 
   .footer-block {
     padding-bottom: 6.6%;
@@ -404,7 +463,7 @@ body {
     text-align: center;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 320px) {
   .container {
     width: 94%;
   }

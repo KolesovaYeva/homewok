@@ -3,6 +3,12 @@
     .hamburger-box{
         left:1000px;
     }
+    .header-block{
+        padding: 2% 0;
+        .button-block{
+            display:none;
+        }
+    }
 
 }
 @media screen and (max-width:1366px){
@@ -55,6 +61,9 @@
         .description{
             width:100%;
         }
+        .section-title {
+            margin-bottom: 7%;
+        }
     }
     .footer-block{
         padding-bottom:6.6%;
@@ -74,7 +83,7 @@
     }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:320px){
     .container{
         width:94%;
     }
