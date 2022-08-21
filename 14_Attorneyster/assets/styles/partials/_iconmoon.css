@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "icomoon";
+  src: url("");
+  src: url("fonts/icomoon.eot?98zfpa#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?98zfpa") format("truetype"), url("fonts/icomoon.woff?98zfpa") format("woff"), url("fonts/icomoon.svg?98zfpa#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star:before {
+  content: "";
+  color: #d1b06b;
+}
+
+.icon-parentheses:before {
+  content: "";
+  color: #d1b06b;
+}
+
+.icon-heart:before {
+  content: "";
+  color: #d1b06b;
+}
+
+.icon-phone:before {
+  content: "";
+}
+
+.icon-envelop:before {
+  content: "";
+}
+
+.icon-facebook2:before {
+  content: "";
+}
+
+.icon-instagram:before {
+  content: "";
+}
+
+.icon-twitter:before {
+  content: "";
+}
+
+.icon-pinterest:before {
+  content: "";
+}
