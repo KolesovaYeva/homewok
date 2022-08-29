@@ -15,8 +15,7 @@ body {
   font-size: 18px;
   line-height: 26px;
   color: #FFFFFF;
-  opacity: 0.8;
-  letter-spacing: 0.1px;
+  opacity: 0.6;
 }
 
 .section-heading {
@@ -26,6 +25,20 @@ body {
   font-size: 40px;
   line-height: 48px;
   color: #FFFFFF;
+}
+
+.smaller-section-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+}
+
+.smaller-section-heading {
+  font-style: italic;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
 }
 
 .blue-text {
@@ -57,9 +70,9 @@ body {
 
 .background-wrapper {
   background-image: url("../img/first-screen-bg-image.webp");
-  height: 60em;
   padding-top: 28px;
-  margin-bottom: 35.6%;
+  margin-bottom: 8.4%;
+  background-repeat: no-repeat;
 }
 
 .header-wrapper {
@@ -83,13 +96,6 @@ body {
 }
 .header-wrapper .nav-list .nav-item {
   position: relative;
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.08em;
-  color: #FFFFFF;
   margin-right: 28.5px;
 }
 .header-wrapper .nav-list .nav-item:last-of-type {
@@ -158,10 +164,12 @@ body {
 }
 .info-wrapper .info-right .info-list .info-list-item .number-span .dolar {
   line-height: 50px;
+  text-align: center;
 }
 .info-wrapper .info-right .info-list .info-list-item .number-span .number {
   font-size: 68px;
   line-height: 72px;
+  text-align: center;
 }
 .info-wrapper .info-right .info-list .info-list-item .number-span::after {
   content: "";
@@ -182,6 +190,7 @@ body {
 .info-wrapper .info-right .info-list .info-list-item .bottom-text {
   margin-bottom: 79px;
   padding-top: 12px;
+  text-align: center;
 }
 .info-wrapper .info-right .text-wrapper {
   -webkit-box-pack: start;
@@ -233,6 +242,7 @@ body {
 
 .quote-wrapper {
   background-image: url("../img/quote-background.webp");
+  background-repeat: no-repeat;
   margin-bottom: 120px;
 }
 .quote-wrapper .text-wrapper {
@@ -244,7 +254,7 @@ body {
   font-weight: 400;
   font-size: 32px;
   line-height: 46px;
-  letter-spacing: 0.043em;
+  letter-spacing: 0.04em;
   margin-bottom: 40px;
 }
 .quote-wrapper .text-wrapper .section-heading {
@@ -404,6 +414,7 @@ body {
   margin-top: 79px;
 }
 .contact-wrapper .info-block .section-heading {
+  font-size: 40px;
   line-height: 39px;
   margin-bottom: 32px;
 }
@@ -480,7 +491,7 @@ body {
   line-height: 20px;
   letter-spacing: 0.08em;
   color: #FFFFFF;
-  opacity: 0.2;
+  opacity: 0.5;
   text-align: left;
 }
 
@@ -489,9 +500,15 @@ body {
 }
 .footer .copyright .section-text {
   font-size: 14px;
-  line-height: 26px;
   opacity: 0.6;
 }
-.footer .copyright .bolder {
+.footer .copyright .block {
+  gap: 2em;
+}
+.footer .copyright .block:nth-child(2) {
+  gap: 1em;
+}
+.footer .copyright .block .bolder {
   font-weight: 400;
+  opacity: 0.8;
 }

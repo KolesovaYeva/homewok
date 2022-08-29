@@ -18,8 +18,7 @@ body{
     font-size: 18px;
     line-height: 26px;
     color: #FFFFFF;
-    opacity: 0.8;
-    letter-spacing: 0.1px;;
+    opacity: 0.6;
 }
 
 .section-heading{
@@ -29,6 +28,20 @@ body{
     font-size: 40px;
     line-height: 48px;
     color: #FFFFFF;
+}
+
+.smaller-section-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+}
+
+.smaller-section-heading{
+    font-style: italic;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
 }
 
 .blue-text{
@@ -60,9 +73,9 @@ body{
 //HEADER
 .background-wrapper{
     background-image: url("../img/first-screen-bg-image.webp");
-    height: 60em;
     padding-top: 28px;
-    margin-bottom: 35.6%;
+    margin-bottom: 8.4%;
+    background-repeat: no-repeat;
 } 
 
 .header-wrapper{
@@ -84,13 +97,6 @@ body{
         text-align: center;
         .nav-item{
             position:relative;
-            font-family: 'Lato';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 24px;
-            letter-spacing: 0.08em;
-            color: #FFFFFF;
             margin-right: 28.5px;
             &:last-of-type{
                 margin-right:0;
@@ -158,10 +164,12 @@ body{
                     position:relative;
                     .dolar{
                         line-height: 50px;
+                        text-align: center;
                     }
                     .number{
                         font-size: 68px;
                         line-height: 72px;
+                        text-align: center;
                     }
                     &::after{
                         content: "";
@@ -192,6 +200,7 @@ body{
                 .bottom-text{
                     margin-bottom:79px;
                     padding-top:12px;
+                    text-align: center;
                 }
             }
         }
@@ -249,16 +258,17 @@ body{
 
 .quote-wrapper{
     background-image: url('../img/quote-background.webp');
+    background-repeat: no-repeat;
     margin-bottom:120px;
     .text-wrapper{
         width: 60%;
     text-align: left;
     padding: 100px 300px 100px 161px;;
         .section-text{
-            font-weight: 400;
+            font-weight:400;
             font-size: 32px;
             line-height: 46px;
-            letter-spacing: 0.043em;
+            letter-spacing: 0.04em;
             margin-bottom:40px;
         }
         .section-heading{
@@ -419,6 +429,7 @@ body{
         width:40%;
         margin-top:79px;
         .section-heading{
+            font-size: 40px;
             line-height: 39px;
             margin-bottom: 32px;
         }
@@ -497,7 +508,7 @@ body{
                         line-height: 20px;
                         letter-spacing: 0.08em;
                         color: #FFFFFF;
-                        opacity: 0.2;
+                        opacity: 0.5;
                         text-align: left;
                         
                     }
@@ -511,11 +522,17 @@ body{
         padding:31px 0;
         .section-text{
             font-size: 14px;
-            line-height: 26px;
             opacity: 0.6;
         }
-        .bolder{
-            font-weight: 400;
+        .block{
+            gap:2em;
+            &:nth-child(2){
+                gap:1em;
+            }
+            .bolder{
+                font-weight: 400;
+                opacity:0.8;
+            }
         }
     }
 }
