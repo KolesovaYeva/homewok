@@ -1,7 +1,33 @@
-.header-wrapper .nav-list .nav-item{
-    &:hover::before{
-        width:100%;
-        background: linear-gradient(96.73deg, #53F3CD 6.73%, rgba(83, 243, 205, 0) 116.9%);
-        
+.header-wrapper{
+    .nav-list{
+        .nav-item{
+            &:hover{
+            transition: all 0.3s ease;
+            transform: translate3d(0px,-8px,0px);
+            }
+            &:hover::before{
+                width:100%;
+                background: linear-gradient(96.73deg, #53F3CD 6.73%, rgba(83, 243, 205, 0) 116.9%);
+                
+            }
+        }
+    }
+}
+.background-wrapper{
+    .header-wrapper{
+        .logo-link{
+                &:hover{
+                    transition: all 0.5s ease;
+                    transform: scale3d(1.1, 1.1, 1.1);
+                }
+        }
+    }
+}
+
+.button-block{
+    &:hover{
+        color:#ffff;
+        transition: all 0.5s ease;
+        transform: translate3d(11px, -11px, 9px);
     }
 }

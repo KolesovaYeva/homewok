@@ -264,9 +264,24 @@ img {
   flex-direction: column;
 }
 
+.header-wrapper .nav-list .nav-item:hover {
+  transition: all 0.3s ease;
+  transform: translate3d(0px, -8px, 0px);
+}
 .header-wrapper .nav-list .nav-item:hover::before {
   width: 100%;
   background: linear-gradient(96.73deg, #53F3CD 6.73%, rgba(83, 243, 205, 0) 116.9%);
+}
+
+.background-wrapper .header-wrapper .logo-link:hover {
+  transition: all 0.5s ease;
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.button-block:hover {
+  color: #ffff;
+  transition: all 0.5s ease;
+  transform: translate3d(11px, -11px, 9px);
 }
 
 /* lato-100 - latin */
@@ -655,11 +670,17 @@ body {
   opacity: 0.3;
 }
 
+.button-block {
+  transition: all 0.5s ease;
+}
+
 .background-wrapper {
   background-image: url("../img/first-screen-bg-image.webp");
   padding-top: 28px;
   margin-bottom: 8.4%;
   background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
 }
 
 .header-wrapper {
@@ -671,6 +692,9 @@ body {
   -webkit-backdrop-filter: blur(9px);
   backdrop-filter: blur(9px);
   background-repeat: no-repeat;
+}
+.header-wrapper .logo-link {
+  transition: all 0.5s ease;
 }
 .header-wrapper .nav-list {
   -webkit-box-pack: center;
@@ -684,6 +708,7 @@ body {
 .header-wrapper .nav-list .nav-item {
   position: relative;
   margin-right: 28.5px;
+  transition: all 0.3s ease;
 }
 .header-wrapper .nav-list .nav-item:last-of-type {
   margin-right: 0;
@@ -831,6 +856,15 @@ body {
   background-image: url("../img/quote-background.webp");
   background-repeat: no-repeat;
   margin-bottom: 120px;
+}
+.quote-wrapper::before {
+  content: "";
+  background-image: url(../img/vector.webp);
+  padding: 8%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 12%;
+  margin: 65px;
 }
 .quote-wrapper .text-wrapper {
   width: 60%;
@@ -1134,6 +1168,16 @@ body {
   .first-screen-content-wrapper .section-heading {
     width: 71.8%;
   }
+
+  .quote-wrapper::before {
+    content: "";
+    background-image: url(../img/vector.webp);
+    padding: 8%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 6%;
+    margin: 56px;
+  }
 }
 @media screen and (min-width: 769px) {
   .hamburger--emphatic {
@@ -1141,6 +1185,10 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
+  .hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
+    background-color: #9b9a9a;
+  }
+
   .side-block {
     position: fixed;
     background-color: #22223c;
@@ -1150,7 +1198,7 @@ body {
     width: 100%;
     max-width: 300px;
     flex-direction: column;
-    z-index: 1;
+    z-index: 4;
     align-items: center;
     justify-content: center;
     padding: 20px;
@@ -1190,9 +1238,29 @@ body {
     line-height: 27px;
   }
 
+  .quote-wrapper::before {
+    content: "";
+    background-image: url(../img/vector.webp);
+    padding: 8%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    margin: 31px;
+  }
   .quote-wrapper .text-wrapper {
     width: 80%;
     padding: 50px;
+  }
+  .quote-wrapper .text-wrapper .section-text {
+    font-size: 21px;
+    line-height: 31px;
+  }
+  .quote-wrapper .text-wrapper .section-heading {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
   }
 
   .promises-wrapper .promises-image {
@@ -1218,19 +1286,6 @@ body {
     margin-bottom: 50px;
     margin: 0 auto 50px;
     text-align: center;
-  }
-
-  .quote-wrapper .text-wrapper .section-text {
-    font-size: 21px;
-    line-height: 31px;
-  }
-
-  .quote-wrapper .text-wrapper .section-heading {
-    font-style: italic;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
-    letter-spacing: 0.08em;
   }
 }
 @media screen and (max-width: 425px) {
@@ -1318,6 +1373,15 @@ body {
 
   .quote-wrapper {
     margin-bottom: 70px;
+  }
+  .quote-wrapper::before {
+    content: "";
+    background-image: url(../img/vector.webp);
+    padding: 15%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 3%;
+    margin: 10px;
   }
   .quote-wrapper .text-wrapper {
     padding: 32px;

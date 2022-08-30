@@ -48,6 +48,7 @@ body{
     font-style: italic;
     color: #689FF2; 
 }
+
 .neon-button{
     font-family: 'Lato';
     font-style: normal;
@@ -70,13 +71,20 @@ body{
     }
 }
 
-//HEADER
+.button-block{
+    transition: all 0.5s ease;
+}
+
 .background-wrapper{
     background-image: url("../img/first-screen-bg-image.webp");
     padding-top: 28px;
     margin-bottom: 8.4%;
     background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
 } 
+
+//HEADER
 
 .header-wrapper{
     padding: 24px 0;
@@ -87,6 +95,9 @@ body{
     -webkit-backdrop-filter: blur(9px);
             backdrop-filter: blur(9px);
     background-repeat: no-repeat;
+    .logo-link{
+        transition: all .5s ease;
+    }
     .nav-list{
         -webkit-box-pack: center;
             -ms-flex-pack: center;
@@ -98,6 +109,7 @@ body{
         .nav-item{
             position:relative;
             margin-right: 28.5px;
+            transition: all 0.3s ease;
             &:last-of-type{
                 margin-right:0;
             }
@@ -260,10 +272,19 @@ body{
     background-image: url('../img/quote-background.webp');
     background-repeat: no-repeat;
     margin-bottom:120px;
+    &::before{
+        content: "";
+        background-image: url(../img/vector.webp);
+        padding: 8%;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 12%;
+        margin: 65px;
+    }
     .text-wrapper{
         width: 60%;
-    text-align: left;
-    padding: 100px 300px 100px 161px;;
+        text-align: left;
+        padding: 100px 300px 100px 161px;
         .section-text{
             font-weight:400;
             font-size: 32px;
@@ -418,6 +439,7 @@ body{
         }
     }
 }
+
 .contact-wrapper{
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -515,7 +537,7 @@ body{
                 }
             }
         }
-    }
+}
 
 .footer{
     .copyright{
