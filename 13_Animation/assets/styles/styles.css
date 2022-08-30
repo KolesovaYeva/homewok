@@ -13,8 +13,8 @@
 }
 
 .flip-card {
-  width: 270px;
-  height: 180px;
+  width: 295px;
+  height: 425px;
   perspective: 1000px;
 }
 
@@ -47,6 +47,10 @@
 .flip-card-back {
   color: white;
   transform: rotateY(180deg);
+}
+
+img {
+  width: 100%;
 }
 
 @font-face {
