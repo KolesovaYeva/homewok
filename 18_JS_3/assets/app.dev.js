@@ -199,12 +199,111 @@
 //     }
 // }
 //task 2.3
-var userNumbers = prompt("\u0423\u043A\u0430\u0436\u0456\u0442\u044C 10 \u043B\u044E\u0431\u0438\u0445 \u0447\u0438\u0441\u0435\u043B \u0447\u0435\u0440\u0435\u0437 \u043F\u0440\u043E\u0431\u0456\u043B\n\u041F\u0440\u0438\u043A\u043B\u0430\u0434: 1 2 3 4 5 6 7 8 9 10");
-var splitedUserNumbers = userNumbers.split(' ');
-var arraySplitedUserNumbers = Array.from(splitedUserNumbers);
-var joinedArraySplitedUserNumbers = parseFloat(arraySplitedUserNumbers.join("")); // const convertedJoinedArraySplitedUserNumbers = parseFloat(arraySplitedUserNumbers); 
-// ЧОМУ ВОНО НЕ ПРАЦЮЄ ТАК????????????????????
+// let pairedNumbers = [];
+// let unpairedNumber = [];
+// let negativeNumbers = [];
+// let positiveNumbers = [];
+// let userNumbers = prompt(`Укажіть 10 любих чисел через пробіл
+// Приклад: 1 2 3 4 5 6 7 8 9 10`);
+// const splitedUserNumbers = userNumbers.split(' ');
+// const arraySplitedUserNumbers = Array.from(splitedUserNumbers);
+//     for (let i = 0; i < arraySplitedUserNumbers.length; i++) {
+//         const evens = arraySplitedUserNumbers[i];
+//         const odds = arraySplitedUserNumbers[i];
+//         const positive = arraySplitedUserNumbers[i];
+//         const negative = arraySplitedUserNumbers[i];
+//         if (evens % 2 === 0) {
+//             pairedNumbers.push(evens);
+//             console.log(`Парні числа:${pairedNumbers.length}`)
+//         } else if (odds % 2 !== 0){
+//             unpairedNumber.push(odds);
+//             console.log(`Непарні числа:${unpairedNumber.length}`)
+//         }
+//         if (positive > 0){
+//             positiveNumbers.push(positive);
+//             console.log(`Додатні числа:${positiveNumbers.length}`)
+//         } else if (negative < 0){
+//             negativeNumbers.push(negative);
+//             console.log(`Від'ємні числа:${negativeNumbers.length}`)
+//         }
+//       }
+// боже, воно хоч якось працює
+// не знаю, поки я зробити так, щоб показувало
+// тільки кінцевий результат
+// task 2.4
+// const daysOfWeek = ['Понеділок', 'Вівторок', 'Середа', 'Четвер', `П'ятниця`, 'Суббота', 'Неділя'];
+// let i = 0;
+// while (confirm(`${daysOfWeek[i]}, а тепер хочеш побачити наступний день`)){
+//     i++;
+//     // if (i === 7){
+//     //     i = 0;
+//     // }
+// }
 
-while (joinedArraySplitedUserNumbers === Number) {
-  var changedArray = String(joinedArraySplitedUserNumbers);
+/* if (i === 7){
+        i = 0;
+    } - оця частинка для того, щоб коли добігли останнього
+    пункту, все почалося заново
+ */
+// Maximum
+// task 3.1 
+// не готов морально це робити
+// task 3.2
+// for (let i = 2; i <= 9; i++) {
+//     for (let a = 1; a <= 10; a++){
+//        console.log(`${i} * ${a} = ${i * a}`);
+//     }
+// }
+
+/* for (let i = 2; i <= 9; i++) - ставимо діапазон чисел 
+для яких робимо таблицю множення (перший множник);
+for (let a = 1; a <= 10; a++) - ставимо діапазон при множенні
+наших чисел на які (другий множник) ми хочемо дізнатися результат (добуток)
+console.log(`${i} * ${a} = ${i * a}`); - виводимо ${i} * ${a} -
+умовно множимо, ${i * a} - виконуємо дію насправді
+ */
+//task 3.3
+var usersDate = prompt('Введи, будь ласка, дату цифрами, наприклад: 1 12 2022');
+var splitedUsersDate = usersDate.split(' ');
+var arraySplitedUsersDate = Array.from(splitedUsersDate);
+
+if (arraySplitedUsersDate[0] < 32 && arraySplitedUsersDate[0] > 0 && arraySplitedUsersDate[1] < 13 && arraySplitedUsersDate[1] > 0 && arraySplitedUsersDate[2] > 0) {
+  // приступимо до року
+  if (arraySplitedUsersDate[0] < 32 && arraySplitedUsersDate[1] <= 12) {
+    arraySplitedUsersDate[2] = +arraySplitedUsersDate[2];
+  } else if (arraySplitedUsersDate[0] == 31 && arraySplitedUsersDate[1] == 12) {
+    arraySplitedUsersDate[2]++;
+    arraySplitedUsersDate[1] = 1;
+    arraySplitedUsersDate[0] = 1;
+  } // раухуємо дати і місяців
+
+
+  if (arraySplitedUsersDate[0] === 31) {
+    arraySplitedUsersDate[0] = 1;
+  } else if (arraySplitedUsersDate[0] == 29 && arraySplitedUsersDate[1] == 2 && arraySplitedUsersDate[2] % 4 == 0) {
+    arraySplitedUsersDate[0] = 1;
+  } else if (arraySplitedUsersDate[1] == 2 && arraySplitedUsersDate[0] == 28 && arraySplitedUsersDate[2] % 4 !== 0) {
+    arraySplitedUsersDate[0] = 1;
+  } else {
+    arraySplitedUsersDate[0]++;
+  } // // приступимо до місяців
+
+
+  if ((arraySplitedUsersDate[1] === 1 || arraySplitedUsersDate[1] === 3 || arraySplitedUsersDate[1] === 5 || arraySplitedUsersDate[1] === 7 || arraySplitedUsersDate[1] === 8 || arraySplitedUsersDate[1] === 10 || arraySplitedUsersDate[1] === 12) && arraySplitedUsersDate[0] === 31) {
+    arraySplitedUsersDate[1]++;
+    arraySplitedUsersDate[0] = 1;
+  } else if ((arraySplitedUsersDate[1] === 4 || arraySplitedUsersDate[1] === 6 || arraySplitedUsersDate[1] === 9 || arraySplitedUsersDate[1] === 11) && arraySplitedUsersDate[0] === 30) {
+    arraySplitedUsersDate[0] = 1;
+    arraySplitedUsersDate[1]++;
+  } else if (arraySplitedUsersDate[1] === 2 && arraySplitedUsersDate[0] === 28 || arraySplitedUsersDate[0] === 29) {
+    arraySplitedUsersDate[0] = 1;
+    arraySplitedUsersDate[1]++;
+  } // хоч і вказано додавати 1 до першої позиції тільки тоді, коли нульова дорівнює 31 і перша позиція 
+  // дорівнює одному з тих чисел, воно все одно додає цю одиницю і коли не виконали першу умову,
+  //  але працювати має так
+
+
+  console.log(arraySplitedUsersDate);
+} else {
+  console.log('Не вимахуйся, введи нормальні дані - не існує такої дати');
 }
