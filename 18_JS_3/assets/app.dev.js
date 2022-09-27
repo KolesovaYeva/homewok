@@ -266,45 +266,48 @@ console.log(`${i} * ${a} = ${i * a}`); - виводимо ${i} * ${a} -
 var usersDate = prompt('Введи, будь ласка, дату цифрами, наприклад: 1 12 2022');
 var splitedUsersDate = usersDate.split(' ');
 var arraySplitedUsersDate = Array.from(splitedUsersDate);
+var numberArraySplitedUsersDate = arraySplitedUsersDate.map(function (str) {
+  return Number(str);
+});
 
-if (arraySplitedUsersDate[0] < 32 && arraySplitedUsersDate[0] > 0 && arraySplitedUsersDate[1] < 13 && arraySplitedUsersDate[1] > 0 && arraySplitedUsersDate[2] > 0) {
+if (numberArraySplitedUsersDate[0] < 32 && numberArraySplitedUsersDate[0] > 0 && numberArraySplitedUsersDate[1] < 13 && numberArraySplitedUsersDate[1] > 0 && numberArraySplitedUsersDate[2] > 0) {
   // приступимо до року
-  if (arraySplitedUsersDate[0] < 32 && arraySplitedUsersDate[1] <= 12) {
-    arraySplitedUsersDate[2] = +arraySplitedUsersDate[2];
-  } else if (arraySplitedUsersDate[0] == 31 && arraySplitedUsersDate[1] == 12) {
-    arraySplitedUsersDate[2]++;
-    arraySplitedUsersDate[1] = 1;
-    arraySplitedUsersDate[0] = 1;
+  if (numberArraySplitedUsersDate[0] < 32 && numberArraySplitedUsersDate[1] <= 12) {
+    numberArraySplitedUsersDate[2] = +numberArraySplitedUsersDate[2];
+  } else if (numberArraySplitedUsersDate[0] == 31 && numberArraySplitedUsersDate[1] == 12) {
+    numberArraySplitedUsersDate[2]++;
+    numberArraySplitedUsersDate[1] = 1;
+    numberArraySplitedUsersDate[0] = 1;
   } // раухуємо дати і місяців
 
 
-  if (arraySplitedUsersDate[0] === 31) {
-    arraySplitedUsersDate[0] = 1;
-  } else if (arraySplitedUsersDate[0] == 29 && arraySplitedUsersDate[1] == 2 && arraySplitedUsersDate[2] % 4 == 0) {
-    arraySplitedUsersDate[0] = 1;
-  } else if (arraySplitedUsersDate[1] == 2 && arraySplitedUsersDate[0] == 28 && arraySplitedUsersDate[2] % 4 !== 0) {
-    arraySplitedUsersDate[0] = 1;
+  if (numberArraySplitedUsersDate[0] === 31) {
+    numberArraySplitedUsersDate[0] = 1;
+  } else if (numberArraySplitedUsersDate[0] == 29 && numberArraySplitedUsersDate[1] == 2 && numberArraySplitedUsersDate[2] % 4 == 0) {
+    numberArraySplitedUsersDate[0] = 1;
+  } else if (numberArraySplitedUsersDate[1] == 2 && numberArraySplitedUsersDate[0] == 28 && numberArraySplitedUsersDate[2] % 4 !== 0) {
+    numberArraySplitedUsersDate[0] = 1;
   } else {
-    arraySplitedUsersDate[0]++;
+    numberArraySplitedUsersDate[0]++;
   } // // приступимо до місяців
 
 
-  if ((arraySplitedUsersDate[1] === 1 || arraySplitedUsersDate[1] === 3 || arraySplitedUsersDate[1] === 5 || arraySplitedUsersDate[1] === 7 || arraySplitedUsersDate[1] === 8 || arraySplitedUsersDate[1] === 10 || arraySplitedUsersDate[1] === 12) && arraySplitedUsersDate[0] === 31) {
-    arraySplitedUsersDate[1]++;
-    arraySplitedUsersDate[0] = 1;
-  } else if ((arraySplitedUsersDate[1] === 4 || arraySplitedUsersDate[1] === 6 || arraySplitedUsersDate[1] === 9 || arraySplitedUsersDate[1] === 11) && arraySplitedUsersDate[0] === 30) {
-    arraySplitedUsersDate[0] = 1;
-    arraySplitedUsersDate[1]++;
-  } else if (arraySplitedUsersDate[1] === 2 && arraySplitedUsersDate[0] === 28 || arraySplitedUsersDate[0] === 29) {
-    arraySplitedUsersDate[0] = 1;
-    arraySplitedUsersDate[1]++;
+  if ((numberArraySplitedUsersDate[1] === 1 || numberArraySplitedUsersDate[1] === 3 || numberArraySplitedUsersDate[1] === 5 || numberArraySplitedUsersDate[1] === 7 || numberArraySplitedUsersDate[1] === 8 || numberArraySplitedUsersDate[1] === 10 || numberArraySplitedUsersDate[1] === 12) && numberArraySplitedUsersDate[0] === 31) {
+    numberArraySplitedUsersDate[1]++;
+    numberArraySplitedUsersDate[0] = 1;
+  } else if ((numberArraySplitedUsersDate[1] === 4 || numberArraySplitedUsersDate[1] === 6 || numberArraySplitedUsersDate[1] === 9 || numberArraySplitedUsersDate[1] === 11) && numberArraySplitedUsersDate[0] === 30) {
+    numberArraySplitedUsersDate[0] = 1;
+    numberArraySplitedUsersDate[1]++;
+  } else if (numberArraySplitedUsersDate[1] === 2 && numberArraySplitedUsersDate[0] === 28 || numberArraySplitedUsersDate[0] === 29) {
+    numberArraySplitedUsersDate[0] = 1;
+    numberArraySplitedUsersDate[1]++;
   } // хоч і вказано додавати 1 до першої позиції тільки тоді, коли нульова дорівнює 31 і перша позиція 
   // дорівнює одному з тих чисел, воно все одно додає цю одиницю і коли не виконали першу умову,
   //  але працювати має так
   //
 
 
-  console.log(arraySplitedUsersDate);
+  console.log(numberArraySplitedUsersDate);
 } else {
   console.log('Не вимахуйся, введи нормальні дані - не існує такої дати');
 }
