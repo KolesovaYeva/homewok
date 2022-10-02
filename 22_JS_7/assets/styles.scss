@@ -1,0 +1,132 @@
+body{
+    background-color:darkgray;
+}
+
+.list_block{
+    justify-content: center;
+    display: block;
+    text-align: center;
+}
+
+.list_item{
+    padding: 10px;
+    background: aliceblue;
+    border: 5px solid lavender;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.5s ease;
+    &:hover{
+        margin:10px auto 10px ;
+        transition: all 0.5s ease;
+    }
+}
+
+.modal {
+    position: fixed;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.modal.open {
+    display: block;
+    background-color: mediumturquoise;
+    opacity: 0.98;
+}
+
+.close_button{
+    margin: 20px;
+    background: mediumturquoise;
+    color: white;
+    border: 3px solid white;
+    padding: 10px 18px;
+    font-size: 24px;
+}
+
+.open_button{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: darkslategrey;
+    color: darkturquoise;
+    border: 2px solid darkturquoise;
+    font-size: 28px;
+    transition: all 0.5s ease;
+    &:hover{
+        margin: 70px auto ;
+        transition: all 0.5s ease;
+    }
+}
+
+.link_rock{
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    position: absolute;
+    left: 35%;
+    top: 41%;
+    font-size: 90px;
+    color: white;
+
+}
+
+.traffic_light_block{
+    background-color: black;
+    border: 1px solid azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 275px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.color_button{
+    background-color: darkturquoise;
+    padding:30px;
+    font-size: 28px;
+    color:white;
+    border: 3px solid azure;
+    display: block;
+    margin: 0 auto 50px;
+}
+
+.item{
+    border-radius: 50%;
+    width: 23%;
+    height: 15%;
+    margin: 0 auto;
+}
+
+.red_color{
+    background-color: rgba(187, 11, 11, 0.685);
+}
+
+.red_color.lightOnClass{
+    background-color: red;
+}
+
+.yellow_color {
+    background-color: rgba(219, 144, 51, 0.699);
+}
+
+.yellow_color.lightOnClass{
+    background-color: yellow;
+}
+.green_color {
+    background-color: rgba(57, 168, 57, 0.582);
+}
+
+.green_color.lightOnClass {
+    background-color: green;
+}
+
