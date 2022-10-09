@@ -1,0 +1,107 @@
+body{
+    background: #212534;
+}
+
+.section_wrapper{
+    background-image: url(../img/background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 860px;
+    width: 74.5%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+    .game_info_wrapper{
+        width: 70%;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .tabs{
+            background: #2B3040;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 28px 0;
+            .tabs_item{
+                font-family: Lato,sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                text-transform: uppercase;
+                color: #8D91A3;
+                text-align: center;
+            }
+        }
+       .card_wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background: #212534;
+        .pic_info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            padding: 60px 0 60px 40px;
+            width: 33%;
+            .game_image{
+                max-height: 230px;
+                max-width: 160px;
+            }
+            .rating_wrapper{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                text-align: center;
+                width: 24%;
+                gap: 10px;
+                .icon{
+                    font-size: 36px;
+                    padding: 10px;
+                }
+            }
+        }
+        .text_info{
+            width: 53%;
+            padding: 60px 40px 60px 0;
+            .higher_wrapper{
+                padding-bottom: 40px;
+                .game_name{
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 32px;
+                    line-height: 32px;
+                    color: #FFFFFF;
+                    padding-bottom: 15px;
+                }
+                .realise_date{
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #FFFFFF;
+                }
+            }
+            .game_description_wrapper{
+                width: 78%;
+                .description_text{
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #B7BACD;
+                }
+            }
+        }
+       }
+    }
+}
+
