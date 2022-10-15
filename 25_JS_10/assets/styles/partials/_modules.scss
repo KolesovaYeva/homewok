@@ -1,0 +1,290 @@
+// main styles
+
+.header_wrapper{
+    width:100%;
+    background-color:#fff;
+    z-index:1;
+    transition: all 0.5s ease-in;
+    .logo{
+        transition: all 0.5s ease-in;
+    }
+    
+    .links_wrapper{
+        gap:30px;
+        .search-icon{
+            transition: all 0.5s ease-in;
+            cursor:pointer;
+        }
+        .profile-icon{
+            transition: all 0.5s ease-in;
+            cursor:pointer;
+        }
+    }
+}
+.navigation_wrapper{
+    .list_wrapper{
+        margin:0;
+        .list_item{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #000;
+            padding: 28px 15px 28px 15px;
+            transition: all 0.5s ease-in;
+        }
+    }
+}
+
+.arrivals_section{
+    padding: 0 0 85px;
+    background-color: #fff;
+    .section_header{
+        margin: 0 auto 50px;
+    }
+}
+
+.slider_wrapper{
+    .slick-arrow{
+        background-color:transparent;
+        border: none;
+        outline: none;
+        position: absolute;
+        top:50%;
+        z-index:1;
+        cursor: pointer;
+            img{
+                width: 40px;
+                display: inline-block;
+            }
+    }
+    .slick-prev{
+        left: -5%;
+        transform: translateY(-50%);
+    }
+    
+    .slick-next{
+        right: -5%;
+        transform: translateY(-50%);
+    }
+    .slider_card_image{
+        width:100%;
+        max-height: 318px;
+        margin-bottom:18px;
+    }
+    .new_arrivals_item{
+        border: 1px solid #F8F1EA;
+        min-height:437px;
+        transition: all 0.5s ease-in;
+    }
+    .slider_card_item{
+        position: relative;
+        padding:20px 10px;
+        margin-right:10px;
+        .partners_logo{
+            display: block;
+            margin: auto;
+            height: 70px;
+        }
+        .image_wrapper{
+            .sold_marker{
+                width:25%;
+                top:0;
+                left:0;
+                position:absolute;
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 12px;
+                padding: 4px 5.5px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #F8F1EA;
+                background: #F16A50;
+            }
+            .sold{
+                background: #F8F1EA;
+                color: #000000;
+            }
+        }
+        .description_text{
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: #000000;
+            margin-bottom:10px;
+        }
+        .guitar_price{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            color: #000000;
+        }
+    }
+    
+}
+
+.slick-dots{
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    gap:12px;
+    button{
+        font-size: 0;
+        display: inline-block;
+        width:12px;
+        height:12px;
+        border-radius: 50%;
+        padding: 0;
+        cursor:pointer;
+        border: 0;
+        outline: 0;
+        background: #CAC2BA;
+    }
+    .slick-active button{
+        background: #F16A50;
+    }
+}
+
+.slider_block1{
+    .slick-dots{
+        bottom: 2%;
+        position: absolute;
+        left: 46%;
+        gap: 30px;
+        button{
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.hero_wrapper{
+    margin-bottom:70px;
+}
+.partners{
+    background: #F8F1EA;
+    padding:70px 0 70px;
+    .section_header{
+        margin: 0 auto 40px;
+    }
+}
+// .slider_hero_card_item{
+//   
+.slider_hero_card_item{
+    max-height: 700px;
+    position: relative;
+    &::before{
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(217, 217, 217, 0) 100%);
+            z-index: 1;
+            opacity: 1;
+    }
+    .slider_content{
+        position: absolute;
+        top: 120px;
+        right: 100px;
+        text-align: center;
+        color: #f8f1ea;
+        text-transform: uppercase;
+        z-index: 3;
+        .slider_content_text{
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 61px;
+            max-width: 400px;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        
+    }
+}
+.slider_content_link{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color:white;
+    padding: 15px 57px;
+    border: 2px solid #F8F1EA;
+    transition: all 0.5s ease-in;
+}
+
+.arrivals_section{
+    .slider_wrapper{
+        margin-bottom:60px;
+    }
+    .slider_content_link{
+        color: #000;
+        border: 2px solid #000;
+        display: block;
+        width: 19%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+}
+.footer_wrapper{
+    background: #35312D;
+    padding: 70px 0 85px;
+    .footer_info_wrapper{
+        margin-bottom:54px;
+        .left_part_wrapper{
+            text-align: left;
+            .navigation_wrapper{
+                .list_wrapper{
+                    padding:0;
+                    .list_item{
+                        padding: 0 0 10px 0;
+                        color: #F8F1EA;
+                        margin-bottom: 10px;
+                        &:last-child{
+                            margin-bottom:0;
+                        }
+                    }
+                }
+            }
+            .logo{
+                margin-bottom:35px;
+            }
+        }
+        .right_part_wrapper{
+            width:25%;
+            align-items: flex-start;
+            .section_header{
+                margin-bottom:50px;
+                font-weight: 500;
+                font-size: 26px;
+                line-height: 32px;
+                color: #F8F1EA
+            }
+            .icons_wrapper{
+                width:100%;
+                margin-bottom:35.5px;
+                .icon{
+                    font-size:30px;
+                    color:#F8F1EA;
+                }
+            }
+        }
+    }
+    .copyright_wrapper{
+        .coryright_text{
+            display: block;
+            justify-content: center;
+            text-align: center;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #F8F1EA;
+        }
+    }
+}
