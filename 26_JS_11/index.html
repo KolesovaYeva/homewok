@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/index.min.css">
+    <title>Guest + AJAX / Axios</title>
+</head>
+<body>
+    <section class="section_wrapper">
+        <ul id="list"></ul>
+        <p class="section_text">Search</p>
+        <input type="text" name="filmName" id="search" class="main_input">
+        <button class="find_button" onclick="findAFilm()">Find a film</button>
+        <div class="">
+            <label class="radio_button">
+                Movie
+                <input onchange="" type="radio" name="type" value="movie" id="" checked>
+            </label>
+            <label class="radio_button">
+                Series
+                <input onchange="" type="radio" name="type" value="series" id="" checked>
+            </label>
+            <label class="radio_button">
+                Episode
+                <input onchange="" type="radio" name="type" value="episode" id="" checked>
+            </label>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
