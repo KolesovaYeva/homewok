@@ -1,0 +1,41 @@
+body {
+  background-color: cadetblue;
+}
+
+.main_block {
+  display: block;
+  margin: 50px auto;
+  text-align: center;
+  justify-content: center;
+  padding: 30px;
+  border: 3px solid aqua;
+  width: 30%;
+  background-color: aliceblue;
+}
+
+.title-city {
+  font-size: 64px;
+  color: cadetblue;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.main-parametr-title {
+  font-size: 21px;
+  margin: 10px;
+  color: cornflowerblue;
+  font-weight: 600;
+}
+
+.parametr-title {
+  font-size: 17px;
+  font-weight: 500;
+  color: darkcyan;
+  margin: 5px;
+}
+
+.text {
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: #5f9ea0;
+}
