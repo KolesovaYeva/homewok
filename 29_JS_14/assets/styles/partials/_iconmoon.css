@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?ir6n5p");
-  src: url("../fonts/icomoon.eot?ir6n5p#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?ir6n5p") format("truetype"), url("../fonts/icomoon.woff?ir6n5p") format("woff"), url("../fonts/icomoon.svg?ir6n5p#icomoon") format("svg");
+  src: url("../fonts/iconmoon/icomoon.eot?qcqs3w");
+  src: url("../fonts/iconmoon/icomoon.eot?qcqs3w#iefix") format("embedded-opentype"), url("../fonts/iconmoon/icomoon.ttf?qcqs3w") format("truetype"), url("../fonts/iconmoon/icomoon.woff?qcqs3w") format("woff"), url("../fonts/iconmoon/icomoon.svg?qcqs3w#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -19,6 +19,11 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-point:before {
+  content: "";
+  color: #2c4058;
 }
 
 .icon-facebook:before {

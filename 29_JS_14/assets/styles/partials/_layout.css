@@ -15,7 +15,7 @@
 .flex-column {
   display: flex;
   align-items: left;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: column;
 }
