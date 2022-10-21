@@ -1,0 +1,74 @@
+.main_wrapper{
+    .first_section_wrapper{
+        .header_wrappper{
+            .nav_list_wrapper{
+                .list_wrapper{
+                    .list_item{
+                        &:hover{
+                            transition: all .5s ease;
+                            font-size:16px;
+                            &::before{
+                                background-color: white;
+                                color:white;
+                                transition: all .5s ease;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+
+.logo_link{
+    .monticello_logo{
+        &:hover{
+            transform: scaleX(1.1);
+            transition: all .5s ease;
+        }
+    }
+}
+
+.socials_wrapper {
+    .socials_item{
+        .icon{
+            &:hover{
+                padding: 13px;
+                font-size: 17px;
+                transition: all .5s ease;
+            }
+        }
+    }
+}
+
+.button_styles {
+    &:hover{
+        font-size: 16px;
+        padding: 19px 45px;
+        transition: all .5s ease;
+    }
+}
+
+.arrow-icon {
+    &:hover{
+        font-size: 30px;
+        padding: 16px 20px 16px 20px;
+        transition: all .5s ease;
+    }
+}
+
+.main_wrapper{
+    .info_wrapper{
+        .contact_wrapper{
+            .right_part_wrapper input, textarea {
+                &:hover, &:active{
+                    padding: 12px;
+                    border-width: 0 0 2px;
+                    border-color: #2C4058;
+                    color:#2C4058;
+                    transition: all .5s ease;
+                }
+            }
+        }
+    }
+}

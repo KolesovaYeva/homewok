@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/iconmoon/icomoon.eot?qcqs3w');
-  src:  url('../fonts/iconmoon/icomoon.eot?qcqs3w#iefix') format('embedded-opentype'),
-    url('../fonts/iconmoon/icomoon.ttf?qcqs3w') format('truetype'),
-    url('../fonts/iconmoon/icomoon.woff?qcqs3w') format('woff'),
-    url('../fonts/iconmoon/icomoon.svg?qcqs3w#icomoon') format('svg');
+  src:  url('../fonts/iconmoon/icomoon.eot?wed4aw');
+  src:  url('../fonts/iconmoon/icomoon.eot?wed4aw#iefix') format('embedded-opentype'),
+    url('../fonts/iconmoon/icomoon.ttf?wed4aw') format('truetype'),
+    url('../fonts/iconmoon/icomoon.woff?wed4aw') format('woff'),
+    url('..fonts/iconmoon/icomoon.svg?wed4aw#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,9 +25,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-point:before {
-  content: "\e900";
-  color: #2c4058;
+.icon-uniE901:before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-location:before {
+  content: "\e947";
+}
+.icon-clock:before {
+  content: "\e94e";
+}
+.icon-drawer2:before {
+  content: "\e95d";
 }
 .icon-facebook:before {
   content: "\ea90";

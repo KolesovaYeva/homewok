@@ -23,6 +23,7 @@ $(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     dots: true,
-    arrows: false
+    prevArrow: '<button type="button" class="slick-prev slick-arrow"><span class="icon-uniE901 arrow-icon"></span></button>',
+    nextArrow: '<button type="button" class="slick-next slick-arrow"><span class="icon-uniE901 arrow-icon"></span></button>'
   });
 });
