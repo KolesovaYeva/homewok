@@ -1,3 +1,4 @@
+
 .container {
     width: 73.125%;
     max-width: 1170px;
@@ -5,19 +6,39 @@
 }
 
 .flex-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction:row
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:row;
+            flex-direction:row
 }
 
 .flex-column{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    align-items:left;
-    justify-content:space-between;
-    flex-wrap:wrap;
-    flex-direction:column;
+    -webkit-box-align:left;
+        -ms-flex-align:left;
+            align-items:left;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
+    -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
 }
 
 .footer_container{

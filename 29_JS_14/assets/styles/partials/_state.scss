@@ -1,3 +1,4 @@
+
 .main_wrapper{
     .first_section_wrapper{
         .header_wrappper{
@@ -5,11 +6,15 @@
                 .list_wrapper{
                     .list_item{
                         &:hover{
+                            -webkit-transition: all .5s ease;
+                            -o-transition: all .5s ease;
                             transition: all .5s ease;
                             font-size:16px;
                             &::before{
                                 background-color: white;
                                 color:white;
+                                -webkit-transition: all .5s ease;
+                                -o-transition: all .5s ease;
                                 transition: all .5s ease;
                             }
                         }
@@ -23,7 +28,11 @@
 .logo_link{
     .monticello_logo{
         &:hover{
-            transform: scaleX(1.1);
+            -webkit-transform: scaleX(1.1);
+                -ms-transform: scaleX(1.1);
+                    transform: scaleX(1.1);
+            -webkit-transition: all .5s ease;
+            -o-transition: all .5s ease;
             transition: all .5s ease;
         }
     }
@@ -35,6 +44,8 @@
             &:hover{
                 padding: 13px;
                 font-size: 17px;
+                -webkit-transition: all .5s ease;
+                -o-transition: all .5s ease;
                 transition: all .5s ease;
             }
         }
@@ -45,6 +56,8 @@
     &:hover{
         font-size: 16px;
         padding: 19px 45px;
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
         transition: all .5s ease;
     }
 }
@@ -53,6 +66,8 @@
     &:hover{
         font-size: 30px;
         padding: 16px 20px 16px 20px;
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
         transition: all .5s ease;
     }
 }
@@ -66,6 +81,8 @@
                     border-width: 0 0 2px;
                     border-color: #2C4058;
                     color:#2C4058;
+                    -webkit-transition: all .5s ease;
+                    -o-transition: all .5s ease;
                     transition: all .5s ease;
                 }
             }

@@ -1,5 +1,12 @@
 "use strict";
 
+$(document).ready(function () {
+  $('#hamburger').click(function () {
+    $('#side_menu').toggleClass('open');
+    $('#hamburger').toggleClass('is-active');
+    $('#navBlock').appendTo('#side_menu');
+  });
+});
 var icon = L.icon({
   iconUrl: './assets/img/Pin.svg',
   iconSize: [60, 120],
