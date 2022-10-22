@@ -25,9 +25,10 @@ $(function () {
     prevArrow: '<button type="button" class="slick-prev slick-arrow"><span class="icon-uniE901 arrow-icon"></span></button>',
     nextArrow: '<button type="button" class="slick-next slick-arrow"><span class="icon-uniE901 arrow-icon"></span></button>',
     responsive: [{
-      breakpoint: 768,
+      breakpoint: 769,
       settings: {
-        slidesToShow: 2
+        slidesToShow: 2,
+        arrows: false
       }
     }, {
       breakpoint: 480,

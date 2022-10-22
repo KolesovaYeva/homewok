@@ -1,3 +1,6 @@
+if(document.documentElement.clientWidth < 1025){
+  $('#navBlock').appendTo('#side_menu');
+}
 $(document).ready(function() {
     $('#hamburger').click(function() {
       $('#side_menu').toggleClass('open');

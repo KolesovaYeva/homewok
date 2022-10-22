@@ -41,8 +41,8 @@ $(function () {
         lazyLoad: 'ondemand',
         slidesToShow: 3,
         slidesToScroll: 1,
-        prevArrow: '<button type="button" class="slick-prev slick-arrow"><img src="./assets/img/prev-icon.svg"/></button>',
-        nextArrow: '<button type="button" class="slick-next slick-arrow"><img src="./assets/img/next-icon.svg"/></button>'
+        dots: true,
+        arrows: false
       }
     }, {
       breakpoint: 569,
