@@ -239,6 +239,8 @@ body {
   height: 50em;
   background-repeat: no-repeat;
   padding-top: 150px;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 .main_wrapper .news_wraper .section_heading {
   margin-bottom: 90px;
@@ -394,6 +396,7 @@ body {
   margin: 50px auto 0;
   outline: 0;
   z-index: -1;
+  max-width: 1600px;
 }
 .main_wrapper .info_wrapper .contact_wrapper {
   background-image: url(../img/contacts_background.webp);
@@ -456,6 +459,8 @@ body {
   background-image: url(../img/footer_background.webp);
   height: 33em;
   background-repeat: no-repeat;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 .footer_wrapper .flex-column {
   gap: 41px;
